@@ -1,0 +1,26 @@
+.registros{
+    display: flex;
+    flex-direction: column;
+}
+
+.registro:nth-child(odd){
+    background-color: lightblue;
+}
+
+.registro{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.registro>*{
+    width: 33%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.registro>button{
+    border: none;
+}

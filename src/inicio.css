@@ -1,0 +1,27 @@
+#index{
+    text-align: center;
+}
+
+.selector{
+    width: 70%;
+    margin: 0 auto;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.link{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+.link:hover{
+    filter: brightness(1.05);
+    font-size: large;
+}

@@ -1,0 +1,40 @@
+.registrar{
+    width: 50%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.registrar > h1{
+    text-align: center;
+}
+
+.registrar > form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} 
+
+.registrar > form > *{
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3px 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.registrar > form > input{
+    border-bottom: 2px solid;
+}
+
+.registrar > form > button:hover{
+    filter: brightness(1.15);
+}
+
+.registrar > form > button{
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
