@@ -1,0 +1,37 @@
+.detalles{
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid gray;
+}
+
+.datos{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 236);
+}
+
+.datos>.dato{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipo{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.dato>*{
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding: 3px 15px;
+}

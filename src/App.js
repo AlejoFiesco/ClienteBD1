@@ -1,12 +1,10 @@
 
 import './App.css';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import { Index } from './inicio';
 import { Registrar } from './registrar';
 import { Consultar } from './consultar';
-import { Editar } from './editar';
+import { Detalles } from './detalles';
 
 function App() {
 
@@ -16,7 +14,7 @@ function App() {
         <Route path="/" element={<Index />}/>
         <Route path="/consultar" element={<Consultar />}/>
         <Route path="/registrar" element={<Registrar />}/>
-        <Route path="/editar" element={<Editar />}/>
+        <Route path="/detalles/:user" element={<Detalles />}/>
       </Routes>
     </div>
   );

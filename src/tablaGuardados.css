@@ -6,6 +6,9 @@
 .registro:nth-child(odd){
     background-color: lightblue;
 }
+.registro:nth-child(even){
+    background-color: rgb(221, 235, 240);
+}
 
 .registro{
     padding: 10px;
@@ -15,12 +18,30 @@
 }
 
 .registro>*{
-    width: 33%;
+    width: 23%;
     display: block;
     text-align: center;
     justify-content: center;
 }
 
-.registro>button{
+.boton{
+    text-decoration: none;
     border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 3px 0;
+    transition: .2s;
+}
+
+.boton:hover{
+    filter: brightness(1.1);
+}
+
+.rojo{
+    background-color: rgb(247, 92, 92);
+}
+
+.amarillo{
+    background-color: rgb(255, 191, 63);
 }

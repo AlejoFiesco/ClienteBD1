@@ -28,13 +28,18 @@ export const TablaGuardados = () => {
 
   return(
     <div className="registros">
-      { registros && registros.map((registro, index) => 
+      { registros.length === 0 
+      ? <>No hay registros</> 
+      : <>
+        {registros.map((registro, index) => 
         <div className="registro" key={index}>
           <span>{ registro[1] }</span>
           <span>{ registro[2] }</span>
-          <button onClick={() => eliminar(registro[0])}>Eliminar</button>
+          <button className="boton rojo" onClick={() => eliminar(registro[0])}>Eliminar</button>
+          <Link className="boton amarillo" to={`/detalles/${registro[0]}`}>Detalles</Link>
         </div>
-      ) }
+      )}
+      </>}
     </div>
   );
 };
